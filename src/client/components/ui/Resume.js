@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Name from "./Name"
 import Title from "./Title"
 import Summary from './Summary'
 import SkillList from './Skillset'
@@ -10,6 +11,7 @@ export default class ResumeLongForm extends Component {
     render() {
         return (
             <div>
+                <Name />
                 <Title />
                 <Summary />
                 <SkillList />

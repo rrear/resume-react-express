@@ -18,9 +18,9 @@ export default class Title extends Component {
     render() {
         console.log("render", this.state.title);
         return (
-            <h1 className="main-title">
+            <h2 className="main-title">
                 {this.state.title}
-            </h1>
+            </h2>
         )
     }
 }

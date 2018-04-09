@@ -102,6 +102,8 @@ import Summary from "../src/client/components/ui/Summary";
 
 import Title from "../src/client/components/ui/Title";
 
+import Name from "../src/client/components/ui/Name";
+
 describe("React Pieces", () => {
     beforeEach(() => {
         // Mock a promise object without actual callback registration.
@@ -227,6 +229,17 @@ describe("React Pieces", () => {
         it("renders", () => {
             expect(item.hasClass("main-title"));
             expect(item.html()).to.equal(title);
+        })
+    });
+
+    describe("Name", () => {
+        let name = TestData.name;
+        let item = shallow(
+            <Name />
+        ).render();
+        it("renders", () => {
+            expect(item.hasClass("main-title"));
+            expect(item.html()).to.equal(name);
         })
     });
 });

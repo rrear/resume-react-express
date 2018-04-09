@@ -14,7 +14,7 @@ class Skill extends Component {
                 <div className="point-box" style={{'fontSize': size}}>
                 {name}
                 </div>
-                ( {points.join(", ")} )
+                {points.join(", ")}
             </span>
         )
     }
